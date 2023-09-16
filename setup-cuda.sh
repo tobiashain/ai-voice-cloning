@@ -18,4 +18,12 @@ python3 -m pip install beartype==0.15.0
 
 rm *.bat
 
-deactivate
+# Deactivate the virtual environment using an interactive Python session
+python - <<END
+import os
+import sys
+
+if sys.prefix != sys.base_prefix:
+    os.system('deactivate')
+
+END
