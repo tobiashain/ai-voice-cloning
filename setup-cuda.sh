@@ -14,6 +14,7 @@ python3 -m pip install -e ./modules/tortoise-tts/ # install TorToiSe
 python3 -m pip install -r ./modules/dlas/requirements.txt # instal DLAS requirements, last, because whisperx will break a dependency here
 python3 -m pip install -e ./modules/dlas/ # install DLAS
 python3 -m pip install -r ./requirements.txt # install local requirements
+python3 -m pip install beartype==0.15.0
 
 rm *.bat
 
